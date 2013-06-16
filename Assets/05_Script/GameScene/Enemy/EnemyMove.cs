@@ -28,6 +28,8 @@ public class EnemyMove : MonoBehaviour {
         {
             GameManeger.script.hitCount++;
             Destroy(this.gameObject);
+            Destroy(obj.gameObject);
+            GameManeger.script.CatapultFireLock = false;
         }
     }
 }

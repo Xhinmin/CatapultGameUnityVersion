@@ -19,7 +19,7 @@ public class CreateEnemy : MonoBehaviour {
         {
             if (Enemy)
             {
-                interalTime = Random.Range(5, 10);
+                interalTime = Random.Range(3, 5);
                 Instantiate(Enemy);
             }
             time = Time.time;

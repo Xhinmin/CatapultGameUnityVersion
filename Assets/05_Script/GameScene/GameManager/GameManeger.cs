@@ -6,7 +6,7 @@ public class GameManeger : MonoBehaviour {
     public static GameManeger script;
     public CatapultStatus CatapultStatus;
     public float gameTime;
-    public float distance; //距離(已自動加20)
+    public float distance; //距離(已自動加40) 上限60出界
     public int hitCount;
     public bool CatapultFireLock;
 	// Use this for initialization
