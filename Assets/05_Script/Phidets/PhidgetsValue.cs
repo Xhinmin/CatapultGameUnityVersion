@@ -10,7 +10,7 @@ public class PhidgetsValue : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        ifKit.close();
+        //ifKit.close();
         ifKit = new InterfaceKit();
         ifKit.open();
         ifKit.waitForAttachment(1000);
@@ -27,12 +27,12 @@ public class PhidgetsValue : MonoBehaviour {
         }
 
         //力道感測
-        if (_PhidgetsValue[0] > 500)
+        if (_PhidgetsValue[0] > 400)
         {
             CatapultFire.fire = true;
         }
         //距離感測
-        GameManeger.script.distance = _PhidgetsValue[1]/10;
+        GameManeger.script.distance = (999 -_PhidgetsValue[1])/25;
     }
 
     void OnDestroy()
