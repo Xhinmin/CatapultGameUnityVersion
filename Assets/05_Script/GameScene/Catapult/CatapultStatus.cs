@@ -16,7 +16,7 @@ public class CatapultStatus : MonoBehaviour {
 	void Update () {
         
         ArmRotateCenter.transform.localPosition = new Vector3 (
-            Mathf.Lerp(0, 2, GameManeger.script.distance / 25),
+            Mathf.Lerp(0, 2, GameManeger.script.distance / 40),
             ArmRotateCenter.transform.localPosition.y,
             ArmRotateCenter.transform.localPosition.z)
             ;

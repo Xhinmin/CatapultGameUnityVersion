@@ -27,10 +27,12 @@ public class PhidgetsValue : MonoBehaviour {
         }
 
         //力道感測
-        if (_PhidgetsValue[0] > 400)
+        if (_PhidgetsValue[0] > 100)
         {
             CatapultFire.fire = true;
         }
+        else
+            CatapultFire.fire = false;
         //距離感測
         GameManeger.script.distance = (999 -_PhidgetsValue[1])/25;
     }

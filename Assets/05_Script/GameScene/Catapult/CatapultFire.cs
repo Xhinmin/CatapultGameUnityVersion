@@ -12,7 +12,7 @@ public class CatapultFire : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-      
+        fire = false;
 	}
 	
 	// Update is called once per frame
